@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GeoLocation Weather App</title>
+
+</head>
+<body>
+  <form>What to Wear -- Sweather or Coat?<br><br><br>
+    <fieldset>
+        <legend>Select the city</legend>
+      <label>
+        <input type="radio" name="city" id="Seattle" value="Seattle">Seattle
+      </label>
+      <label>
+        <input type="radio" name="city" id="London"  value="London">London
+      </label>
+      <label>
+        <input type="radio" name="city" id="MyLocation" value="My Location">My Location
+      </label>
+     </fieldset><br><br>
+    </form>
+
+  <input type="button" id="btn" value="Check Weather" onclick="getWeather();"><br>
+
+  <div>
+    <ul id="listContainer">
+    </ul>
+    </div>
+  <script type="text/javascript" src="weather.js"></script>
+</body>
+</html>
